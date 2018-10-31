@@ -14,7 +14,7 @@
     "    apk add glibc-2.25-r0.apk",
     "ENV APPDIR /usr/local/app",
     "WORKDIR $APPDIR",
-    "COPY ./package.json $APPDIR/package.json"
+    "COPY ./package.json $APPDIR/package.json",
     "ADD . $APPDIR",
     "ENV NODE_ENV=production",
     "RUN npm config set registry http://registry.npmjs.org/ && \\",
