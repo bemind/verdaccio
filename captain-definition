@@ -26,7 +26,7 @@
     "    yarn cache clean && \\",
     "    yarn install --production=true --pure-lockfile",
     "RUN mkdir -p /verdaccio/storage /verdaccio/plugins /verdaccio/conf",
-    "ADD conf/docker.yaml /verdaccio/conf/config.yaml",
+    "ADD ./src/conf/docker.yaml /verdaccio/conf/config.yaml",
     "RUN addgroup -S verdaccio && adduser -S -G verdaccio verdaccio && \\",
     "    chown -R verdaccio:verdaccio \"$APPDIR\" && \\",
     "    chown -R verdaccio:verdaccio /verdaccio",
