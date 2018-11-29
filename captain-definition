@@ -15,7 +15,7 @@
     "ENV APPDIR /usr/local/app",
     "WORKDIR $APPDIR",
     "ADD . $APPDIR",
-    "ADD ./package.json $APPDIR/package.json",
+    "ADD package.json $APPDIR/package.json",
     "ENV NODE_ENV=production",
     "RUN npm config set registry http://registry.npmjs.org/ && \\",
     "    yarn global add -s flow-bin@0.69.0 && \\",
