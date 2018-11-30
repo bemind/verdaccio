@@ -23,9 +23,9 @@ web:
 auth:
   htpasswd:
     file: /verdaccio/conf/htpasswd
+    max_users: 8
     # Maximum amount of users allowed to register, defaults to "+infinity".
     # You can set this to -1 to disable registration.
-    max_users: 8
 
 # a list of other known repositories we can talk to
 uplinks:
