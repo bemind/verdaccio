@@ -19,7 +19,7 @@
     "ENV NODE_ENV=production",
     "RUN npm install yarn@latest",
     "RUN npm config set registry https://registry.yarnpkg.com/ && \\",
-    "    yarn global add -s flow-bin@0.69.0 && \\",
+    "    yarn global add flow-bin && \\",
     "    yarn install --production=false && \\",
     "    yarn lint && \\",
     "    yarn code:docker-build && \\",
