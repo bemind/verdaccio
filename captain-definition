@@ -18,7 +18,7 @@
     "ADD ./src/package.json $APPDIR/package.json",
     "ENV NODE_ENV=production",
     "RUN npm install yarn@latest",
-    "RUN npm config set registry http://registry.npmjs.org/ && \\",
+    "RUN npm config set registry https://registry.yarnpkg.com/ && \\",
     "    yarn global add -s flow-bin@0.69.0 && \\",
     "    yarn install --production=false && \\",
     "    yarn lint && \\",
